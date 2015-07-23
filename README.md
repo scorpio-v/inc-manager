@@ -32,8 +32,8 @@ cd my-yo-project
 yo webapp
 
 ## Install AngularJS
-# npm install -g generator-angular
-# yo angular
+[npm install -g generator-angular]
+[yo angular]
 
 ## Add Controllers, Directive, Fitlers and Service
 yo angular:controller incidentController
