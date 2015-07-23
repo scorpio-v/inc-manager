@@ -11,8 +11,6 @@ Run `grunt` for building and `grunt serve` for preview.
 
 Running `grunt test` will run the unit tests with karma.
 
-## Additional information
--------------------------------------------------------------------
 ## To check Node and NPM version
 node --version && npm --version
 
