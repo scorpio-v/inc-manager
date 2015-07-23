@@ -1,0 +1,36 @@
+<div class="col-xs-12 col-sm-10 col-sm-offset-1" data-ng-controller="IncidentcontrollerCtrl">
+  <div id="messages" class="alert alert-success" data-ng-show="messages" data-ng-bind="messages"></div>
+  <div data-ng-show="progress.active()" style="color: red; font-size: 14px;">* Required Field</div>
+  <form name="incidentForm" novalidate role="form">
+    <div class="form-group">
+      <label for="affectedUser">Affected User(s)</label>
+      <span class="label label-danger" data-ng-show="submitted && incidentForm.affectedUser.$error.required">*</span>
+      <input type="text" name="affectedUser" data-ng-model="affectedUser" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label for="affectedCompany">Affected Company</label>
+      <span class="label label-danger" data-ng-show="submitted && incidentForm.affectedCompany.$error.required">*</span>
+      <input type="text" name="affectedCompany" data-ng-model="affectedCompany" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label for="incTemplate">Incident Template</label>
+      <input type="file" name="incTemplate" data-ng-model="incTemplate" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label class="checkbox-inline">
+        <input type="checkbox" name="autoAssign" data-ng-model="autoAssign" required />Auto-assign this task to the best fit group
+      </label>
+    </div>
+    <hr/>
+    <div class="form-group">
+      <label for="incTitle">Incident Title</label>
+      <span class="label label-danger" data-ng-show="submitted && incidentForm.incTitle.$error.required">*</span>
+      <input type="text" name="incTitle" data-ng-model="incTitle" class="form-control" required />
+    </div>
+    <div class="form-group">
+      <label for="priority">Calculated Priority: </label>
+      <span class="label label-danger">High</span>
+    </div>
+    <button data-ng-disabled="progress.active()" data-ng-click="submit(helpForm)" class="btn btn-default">Submit</button>
+  </form>
+</div>
