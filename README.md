@@ -13,9 +13,9 @@ Running `grunt test` will run the unit tests with karma.
 node --version && npm --version
 
 ## Grunt commands to execute
-# npm install -g grunt
-# npm install -g grunt-cli
-# npm install -g bower
-# npm install
-# bower install
-# grunt build
+* npm install -g grunt
+* npm install -g grunt-cli
+* npm install -g bower
+* npm install
+* bower install
+* grunt build
