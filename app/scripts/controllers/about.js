@@ -2,16 +2,15 @@
 
 /**
  * @ngdoc function
- * @name incidentManagerApp.controller:AboutCtrl
+ * @name incidentManagerApp.controller:MainCtrl
  * @description
- * # AboutCtrl
+ * # MainCtrl
  * Controller of the incidentManagerApp
  */
-angular.module('incidentManagerApp')
-  .controller('AboutCtrl', function () {
+incidentManagerApp.controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+});
