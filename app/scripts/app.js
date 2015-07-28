@@ -1,15 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name incidentManagerApp
- * @description
- * # incidentManagerApp
- *
- * Main module of the application.
- */
-angular
-  .module('incidentManagerApp', [
+var incidentManagerApp = angular.module('incidentManagerApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
