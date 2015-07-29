@@ -16,6 +16,7 @@ incidentManagerApp.factory('CreateIncidentService', ['$http', function ($http) {
   return svc;
 
   function getAffectedUsers(query) {
+    var searchURL = 'http://<domain>/service.jsp?query=' + query;
 	  console.log('getAffectedUsers: ' + query);
 
 		var user = $http({method:'GET', url:searchURL}).
@@ -30,6 +31,7 @@ incidentManagerApp.factory('CreateIncidentService', ['$http', function ($http) {
   };
 
   function getAffectedCompany(query) {
+    var searchURL = 'http://<domain>/service.jsp?query=' + query;
 	  console.log('getAffectedCompany: ' + query);
 
 		var company = $http({method:'GET', url:searchURL}).
