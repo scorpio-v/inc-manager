@@ -6,9 +6,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css"/>
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body ng-app="incidentManagerApp">
+
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,13 +34,14 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
 
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
-    <script src="scripts/controllers/incidentcontroller.js"></script>
-    <script src="scripts/directives/incidentdirective.js"></script>
-    <script src="scripts/filters/incidentfilter.js"></script>
-    <script src="scripts/services/incidentservice.js"></script>
+    <script src="scripts/controllers/incident.controller.js"></script>
+    <script src="scripts/directives/incident.directive.js"></script>
+    <script src="scripts/filters/incident.filter.js"></script>
+    <script src="scripts/services/incident.service.js"></script>
 </body>
 </html>
