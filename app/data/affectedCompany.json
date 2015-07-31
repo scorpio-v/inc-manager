@@ -1,0 +1,10 @@
+[
+  {
+    "company_name":"Company A",
+    "company_mnemonic": "A"
+  },
+  {
+    "company_name":"Affected User B",
+    "company_mnemonic": "B"
+  }
+]
